@@ -26,7 +26,7 @@ function Product({ id, title, image, price, rating }) {
       <div className="product__info">
         <p>{title}</p>
         <p className="product__price">
-          <small>$</small>
+          <small>€ </small>
           <strong>{price}</strong>
         </p>
         <p className="product__rating">
@@ -35,9 +35,7 @@ function Product({ id, title, image, price, rating }) {
             .map((_, i) => (
               <p>
                 <span role="img" aria-label="star">
-                  
                   🌟
-                
                 </span>
               </p>
             ))}
